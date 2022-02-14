@@ -57,15 +57,15 @@ func main() {
 	}
 
 	// 発行された SQL をログに出す設定をする
-	engine.ShowSQL(true)
+	// engine.ShowSQL(true)
 
 	// 先にデータベースのテーブルを削除しておく
-	if err := engine.DropTables(new(User)); err != nil {
-		panic(err)
-	}
+	// if err := engine.DropTables(new(User)); err != nil {
+	// 	panic(err)
+	// }
 
-	createTable(*engine)
-	insert(*engine)
+	// createTable(*engine)
+	// insert(*engine)
 	get(*engine)
 
 	fmt.Println("うまく動きました。")
